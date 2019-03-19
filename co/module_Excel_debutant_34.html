@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Filtrer et trier un tableau [Excel&nbsp;: mise en forme, calculs et fonctions simples]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.106 / Opale 3.6.103">
+  <meta name="revision" content="2019-03-19 10:32">
+  <link rel="start" href="module_Excel_debutant.html" title="Excel&nbsp;: mise en forme, calculs et fonctions simples">
+  <meta name="author" content="Sarah Touz&eacute; pour Cefim ">
+  <meta name="keywords" content>
+  <meta name="date" content="01/03/2019">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"jtfn25b0"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Excel_debutant_34.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_Excel_debutant.txt");
+	</script> </head>
+ <body class="default module expUc">
+  <div id="root"><header id="header" role="banner"><h1><span>Excel&nbsp;: mise en forme, calculs et fonctions simples</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Filtrer et trier un tableau</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Nous allons voir une derni&egrave;re fonctionnalit&eacute; facile &agrave; mettre en place et tr&egrave;s pratique : Les filtres et les tris d'un tableau.</p><p>Imaginons que nous ayons une liste des &eacute;l&egrave;ves avec leur moyenne du trimestre :</p></div><div class="rBk res"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><img src="../res/tableau-a-filtrer.jpg" width="366" height="335" alt></div></figure></div><div class="rBk "><p>Les &eacute;l&egrave;ves d'une classe et leur note moyenne</p><p>Il serait pratique de pouvoir trier le tableau par ordre alphab&eacute;tique afin d'avoir les &eacute;l&egrave;ves de A &agrave; Z, ou alors de les classer par note d&eacute;croissante, afin d'&eacute;tablir un classement.</p><p>S&eacute;lectionnez les cellules de votre tableau , cliquez sur Filtrer et Trier, puis Filtrer.</p></div><div class="rBk res"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><a href="../res/filtrer-et-trier.jpg" class="imgZoom" target="_blank" onclick="scImgMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fen&ecirc;tre)"><img src="../res/filtrer-et-trier_1.jpg" width="630" height="346" alt></a></div></figure></div><div class="rBk "><p>Rendre votre tableau filtrable et triable</p><p>Des petites cases avec une fl&egrave;che vont apparaitre sur les en-t&ecirc;tes de vos colonnes. Cliquez dessus afin de choisir une m&eacute;thode de tri !</p></div><div class="rBk res"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><a href="../res/trier-decroissant.jpg" class="imgZoom" target="_blank" onclick="scImgMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fen&ecirc;tre)"><img src="../res/trier-decroissant_1.jpg" width="630" height="352" alt></a></div></figure></div><div class="rBk "><p>Trier les notes par ordre d&eacute;croissant</p><p>Et voil&agrave; le r&eacute;sultat, les &eacute;l&egrave;ves sont class&eacute;s par leur note moyenne :</p></div><div class="rBk res"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><a href="../res/tableau-tri-notes.jpg" class="imgZoom" target="_blank" onclick="scImgMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fen&ecirc;tre)"><img src="../res/tableau-tri-notes_1.jpg" width="630" height="262" alt></a></div></figure></div><div class="rBk "><p>le tableau commence par les meilleurs &eacute;l&egrave;ves</p><p>Et voil&agrave; pour Excel ! Il y a de nombreuses autres fonctions et possibilit&eacute;s pour ce logiciel qui peut &ecirc;tre tr&egrave;s complexe et accomplir beaucoup de besoins. Mais nous allons en rester l&agrave; pour le moment, ces connaissances vous suffiront tr&egrave;s largement pour une utilisation de tous les jours.</p><p>Je vous conseille de venir relire ces 3 cours dans quelques temps pour r&eacute;viser chaque m&eacute;thode afin de bien les assimiler. On va maintenant voir PowerPoint, qui s'av&egrave;re beaucoup plus simple !</p></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="module_Excel_debutant_33.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (G&eacute;n&eacute;rer des donn&eacute;es)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><span class="btnNav next"><span>Fin</span></span></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="34"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Excel_debutant_1.html"><a href="module_Excel_debutant_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Excel_debutant_2.html"><a href="module_Excel_debutant_2.html" target="_self" class="item"><span>Excel, pour quoi faire ?</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Excel_debutant_3.html"><a href="module_Excel_debutant_3.html" target="_self" class="item"><span>&Eacute;l&eacute;ments principaux de ce logiciel</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Excel_debutant_4.html"><a href="module_Excel_debutant_4.html" target="_self" class="item"><span>les principes fondamentaux d'Excel</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Excel_debutant_5.html"><a href="module_Excel_debutant_5.html" target="_self" class="item"><span>Cr&eacute;ation d'un premier tableau simple</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Excel_debutant_6.html"><a href="module_Excel_debutant_6.html" target="_self" class="item"><span>Mise en forme du tableau</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Excel_debutant_7.html"><a href="module_Excel_debutant_7.html" target="_self" class="item"><span>Calculs automatis&eacute;s avec Excel</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Excel_debutant_8.html"><a href="module_Excel_debutant_8.html" target="_self" class="item"><span>Exercice&nbsp;: saisie, mise en forme et calculs simples</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Excel_debutant_9.html"><a href="module_Excel_debutant_9.html" target="_self" class="item" type="up"><span>Graphiques</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Excel_debutant_33.html"><a href="module_Excel_debutant_33.html" target="_self" class="item"><span>G&eacute;n&eacute;rer des donn&eacute;es</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Excel_debutant_34.html"><span class="item"><span>Filtrer et trier un tableau</span></span></div></li></ul></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Excel_debutant.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("ide:content/chi:div/chi:section/des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>
